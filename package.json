@@ -1,8 +1,13 @@
 {
   "name": "create-micro-qk",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "基于 qiankun 的模版构建工具",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gilinfen/create-micro-qk"
+  },
+  "homepage": "https://github.com/Gilinfen/create-micro-qk",
   "bin": {
     "create-micro-qk": "cli.js"
   },
