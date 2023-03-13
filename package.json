@@ -1,0 +1,21 @@
+{
+  "name": "create-micro-qk",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "create-micro-qk": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "qiankun"
+  ],
+  "author": "Glinfen gilinfen@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
+  }
+}
