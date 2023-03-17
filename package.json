@@ -17,6 +17,7 @@
     "@commitlint/config-conventional": "^17.4.4",
     "eslint-config-custom": "workspace:*",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
     "prettier": "latest",
     "turbo": "latest",
     "unbuild": "^1.1.2"
@@ -24,5 +25,19 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "packageManager": "pnpm@7.22.0"
+  "packageManager": "pnpm@7.22.0",
+  "lint-staged": {
+    "*": [
+      "prettier --write --cache --ignore-unknown"
+    ],
+    "packages/*/{src,types}/**/*.ts": [
+      "eslint --cache --fix"
+    ],
+    "packages/**/*.d.ts": [
+      "eslint --cache --fix"
+    ],
+    "playground/**/__tests__/**/*.ts": [
+      "eslint --cache --fix"
+    ]
+  }
 }
