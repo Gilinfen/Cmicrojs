@@ -1,11 +1,12 @@
 {
-  "name": "cmicro",
-  "version": "1.0.1",
+  "name": "micros",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "Glinfen",
   "license": "MIT",
+  "type": "module",
   "bin": {
-    "cmicro": "index.js"
+    "micros": "index.js"
   },
   "scripts": {
     "build": "unbuild"
@@ -22,8 +23,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gilinfen/create-micro-cli",
-    "directory": "packages/create-micro-cli"
+    "url": "git+https://github.com/Gilinfen/micros",
+    "directory": "packages/micros"
   },
   "dependencies": {
     "uuid": "^9.0.0"
