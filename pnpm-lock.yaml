@@ -18,7 +18,7 @@ importers:
       turbo: 1.8.3
       unbuild: 1.1.2
 
-  packages/cmicro:
+  packages/micros:
     specifiers:
       '@types/uuid': ^9.0.1
       uuid: ^9.0.0
@@ -27,7 +27,7 @@ importers:
     devDependencies:
       '@types/uuid': 9.0.1
 
-  packages/create-cmicro:
+  packages/create-micros:
     specifiers:
       '@types/uuid': ^9.0.1
       uuid: ^9.0.0

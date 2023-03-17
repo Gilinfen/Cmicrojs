@@ -1,0 +1,35 @@
+{
+  "name": "create-micros",
+  "version": "1.0.1",
+  "main": "index.js",
+  "author": "Glinfen",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "create-micros": "index.js"
+  },
+  "scripts": {
+    "build": "unbuild"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "keywords": [
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gilinfen/micros",
+    "directory": "packages/create-micros"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.1"
+  }
+}
