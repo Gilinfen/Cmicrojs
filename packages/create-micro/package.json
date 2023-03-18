@@ -1,0 +1,38 @@
+{
+  "name": "create-micro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Glinfen",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "create-micro": "index.js"
+  },
+  "scripts": {
+    "build": "unbuild"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "keywords": [
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gilinfen/cmicro",
+    "directory": "packages/create-micro"
+  },
+  "dependencies": {
+    "kolorist": "^1.7.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.4.3"
+  }
+}
