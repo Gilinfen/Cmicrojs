@@ -7,6 +7,7 @@ const obj = {
   refactor: '🚀'
 }
 
+console.log('a')
 const keys = Object.keys(obj)
 
 module.exports = {
