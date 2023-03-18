@@ -1,6 +1,6 @@
 {
   "name": "create-micro",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "main": "index.js",
   "author": "Glinfen",
   "license": "MIT",
@@ -19,7 +19,8 @@
     "dist"
   ],
   "keywords": [
-    "cli"
+    "cli",
+    "qiankun"
   ],
   "repository": {
     "type": "git",
