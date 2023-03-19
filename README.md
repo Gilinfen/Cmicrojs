@@ -1,5 +1,7 @@
 # Turborepo starter
 
+![cmicro-log](https://picgo-any.oss-cn-shanghai.aliyuncs.com/img/202303191453299.png)
+
 This is an official pnpm starter turborepo.
 
 ## What's inside?

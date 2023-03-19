@@ -5,6 +5,7 @@ node_modules
 .pnp
 .pnp.js
 dist
+.eslintcache
 
 # testing
 coverage
@@ -32,3 +33,4 @@ yarn-error.log*
 
 # turbo
 .turbo
+

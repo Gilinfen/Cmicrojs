@@ -7,11 +7,9 @@ const obj = {
   refactor: '🚀'
 }
 
-console.log('a')
 const keys = Object.keys(obj)
 
 module.exports = {
-  // https://www.yuque.com/arvinxx-fe/workflow/commitlint-config-gitmoji-guide
   extends: ['@commitlint/config-conventional'],
   rules: {
     //   TODO Add Scope Enum Here
