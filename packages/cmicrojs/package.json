@@ -1,16 +1,15 @@
 {
   "name": "cmicrojs",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "快速构建模版插件",
   "author": "Glinfen",
-  "main": "index.js",
+  "main": "./dist/index.mjs",
   "type": "module",
-  "types": "./src/index.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "unbuild"
   },
   "files": [
-    "index.js",
     "dist"
   ],
   "keywords": [

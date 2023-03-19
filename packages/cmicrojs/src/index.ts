@@ -69,7 +69,7 @@ function repValue(params: any): Framework[] {
 
 export default async function init<T extends string>(
   values: InitValie[],
-  promptsFun: () => Promise<prompts.Answers<T>>
+  promptsFun?: () => Promise<prompts.Answers<T>>
 ) {
   const FRAMEWORKS: Framework[] = repValue(values)
 
