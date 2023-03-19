@@ -210,12 +210,22 @@ export default async function init<T extends string>(
   }
 
   // 写入 package.json
-  const pkg = JSON.parse(
-    fs.readFileSync(path.join(templateDir, `package.json`), 'utf-8')
-  )
-  pkg.name = packageName || getProjectName()
+  try {
+    const pkg = JSON.parse(
+      fs.readFileSync(path.join(templateDir, `package.json`), 'utf-8')
+    )
+    pkg.name = packageName || getProjectName()
 
-  write('package.json', JSON.stringify(pkg, null, 2) + '\n')
+    write('package.json', JSON.stringify(pkg, null, 2) + '\n')
+  } catch (error) {
+    console.log(
+      '\n' +
+        'package.json file not found in the template' +
+        ` Stencil position ${templateDir}`
+    )
+    console.error(error)
+    return
+  }
 
   // 最后提示语
   const cdProjectName = path.relative(cwd, root)

@@ -57,18 +57,9 @@ importers:
 
   packages/create-micro:
     specifiers:
-      '@types/minimist': ^1.2.2
-      '@types/prompts': ^2.4.3
-      kolorist: ^1.7.0
-      minimist: ^1.2.8
-      prompts: ^2.4.2
-    dependencies:
-      kolorist: 1.7.0
-      minimist: 1.2.8
-      prompts: 2.4.2
+      cmicrojs: workspace:^1.0.7
     devDependencies:
-      '@types/minimist': 1.2.2
-      '@types/prompts': 2.4.3
+      cmicrojs: link:../cmicrojs
 
   packages/eslint-config-custom:
     specifiers:

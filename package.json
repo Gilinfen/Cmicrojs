@@ -1,5 +1,5 @@
 {
-  "name": "@micro/micro-monorepo",
+  "name": "@cmicrojs/cmicrojs-monorepo",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
