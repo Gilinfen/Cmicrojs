@@ -15,18 +15,6 @@ const init = async () => {
       name: 'react',
       display: 'React',
       color: 'cyan',
-      variants: [
-        {
-          name: 'react',
-          display: 'JavaScript',
-          color: 'yellow'
-        },
-        {
-          name: 'react-ts',
-          display: 'TypeScript',
-          color: 'blue'
-        }
-      ]
     },
     {
       name: 'vue',
@@ -57,8 +45,7 @@ init()
 .
 ├── template-react
 │   └── index.js
-├── template-react-ts
-│   └── index.ts
+│   ├── package.json
 ├── template-vue
 │   ├── README.md
 │   ├── _gitignore

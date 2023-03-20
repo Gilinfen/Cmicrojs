@@ -19,7 +19,7 @@ type InitValie = Pick<
   Exclude<keyof Framework, 'color' | 'variants'>
 > & {
   color: Color
-  variants: initVariants[]
+  variants?: initVariants[]
 }
 
 type ColorFunc = (str: string | number) => string
@@ -35,7 +35,7 @@ type Framework = {
   name: string
   display: string
   color: ColorFunc
-  variants: FrameworkVariant[]
+  variants?: FrameworkVariant[]
 }
 
 const { reset, red } = kolorist
@@ -144,7 +144,7 @@ export default async function init<T extends string>(
           name: 'variant',
           message: reset('Select a variant:'),
           choices: (framework: Framework) =>
-            framework.variants.map(variant => {
+            framework.variants?.map(variant => {
               const variantColor = variant.color
               return {
                 title: variantColor(variant.display || variant.name),
