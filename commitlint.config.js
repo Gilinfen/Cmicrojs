@@ -1,13 +1,4 @@
-const obj = {
-  feat: '🌈',
-  fix: '🐛',
-  update: '⚡️',
-  docs: '🎓',
-  chore: '💢',
-  refactor: '🚀'
-}
-
-const keys = Object.keys(obj)
+const keys = require('./changelog.config').list
 
 module.exports = {
   extends: ['@commitlint/config-conventional'],

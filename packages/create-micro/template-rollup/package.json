@@ -1,0 +1,84 @@
+{
+  "name": "rollup-template",
+  "version": "0.1.0",
+  "description": "基于 semantic-release 的自动化 release rollup项目模板",
+  "author": "CaoMeiYouRen",
+  "private": true,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "lint": "cross-env NODE_ENV=production eslint src --fix --ext .ts,.js,.cjs,.mjs",
+    "prebuild": "rimraf dist",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "analyzer": "cross-env NODE_ENV=production ANALYZER=true rollup -c",
+    "dev": "cross-env NODE_ENV=development ts-node-dev src/index.ts",
+    "dev:rollup": "cross-env NODE_ENV=development rollup -c -w",
+    "rm": "rimraf node_modules",
+    "start": "node ./dist/index",
+    "release": "semantic-release",
+    "commit": "git add . && git cz",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/debug": "^4.1.7",
+    "@types/node": "^20.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "conventional-changelog-cmyr-config": "^2.1.0",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "debug": "^4.3.4",
+    "eslint": "^8.40.0",
+    "eslint-config-cmyr": "^1.1.28",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.22.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "semantic-release": "^21.0.2",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "changelog": {
+    "language": "zh"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "cross-env NODE_ENV=production eslint src *.js --fix --ext .ts,.js",
+      "git add"
+    ]
+  }
+}

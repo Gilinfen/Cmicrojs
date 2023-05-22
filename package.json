@@ -33,17 +33,19 @@
     "node": ">=14.0.0"
   },
   "packageManager": "pnpm@7.22.0",
+  "config": {
+    "commitizen": {
+      "config": "./changelog.config.js"
+    }
+  },
   "lint-staged": {
     "*": [
       "prettier --write --cache --ignore-unknown"
     ],
-    "packages/*/{src,types}/**/*.ts": [
+    "apps/{master}/{src,types}/**/*.ts": [
       "eslint --cache --fix"
     ],
-    "packages/**/*.d.ts": [
-      "eslint --cache --fix"
-    ],
-    "playground/**/__tests__/**/*.ts": [
+    "apps/**/*.d.ts": [
       "eslint --cache --fix"
     ]
   }
