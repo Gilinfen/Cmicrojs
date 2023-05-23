@@ -1,20 +1,10 @@
+const keys = require('./changelog.config').list
+
 module.exports = {
-    extends: ['@commitlint/config-conventional'],
-    rules: {
-        'type-enum': [2, 'always', [
-            'feat',
-            'fix',
-            'docs',
-            'style',
-            'refactor',
-            'perf',
-            'test',
-            'build',
-            'ci',
-            'chore',
-            'revert',
-        ]],
-        'subject-full-stop': [0, 'never'],
-        'subject-case': [0, 'never'],
-    },
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    //   TODO Add Scope Enum Here
+    // 'scope-enum': [2, 'always', ['yourscope', 'yourscope']],
+    'type-enum': [2, 'always', keys]
+  }
 }
