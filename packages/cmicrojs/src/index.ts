@@ -229,13 +229,12 @@ export default async function init<T extends string>(
 
   // 最后提示语
   const cdProjectName = path.relative(cwd, root)
+  const resultName = cdProjectName.includes(' ')
+    ? `"${cdProjectName}"`
+    : cdProjectName
   console.log(`\nDone. Now run:\n`)
   if (root !== cwd) {
-    console.log(
-      `  cd ${
-        cdProjectName.includes(' ') ? `"${cdProjectName}"` : cdProjectName
-      }`
-    )
+    console.log(`  cd ${resultName}`)
   }
   switch (pkgManager) {
     case 'yarn':
@@ -248,7 +247,7 @@ export default async function init<T extends string>(
       break
   }
   console.log()
-  return packageName
+  return resultName
 }
 
 // 格式化命令行参数

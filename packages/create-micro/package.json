@@ -30,6 +30,6 @@
     "directory": "packages/create-micro"
   },
   "devDependencies": {
-    "cmicrojs": "workspace:^1.0.8"
+    "cmicrojs": "^*"
   }
 }

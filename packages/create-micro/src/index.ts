@@ -47,6 +47,10 @@ cmicrojs([
       }
     ]
   }
-]).catch(e => {
-  console.log(e)
-})
+])
+  .catch(e => {
+    console.log(e)
+  })
+  .then(res => {
+    console.log(res, 'res')
+  })

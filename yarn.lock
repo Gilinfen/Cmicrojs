@@ -1033,15 +1033,6 @@ cliui@^8.0.1:
     strip-ansi "^6.0.1"
     wrap-ansi "^7.0.0"
 
-"cmicrojs@workspace:^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/cmicrojs/-/cmicrojs-1.0.8.tgz#4465dcee891feee3a8ac69de22834f6b580c8086"
-  integrity sha512-dL6RM20y/y3DQPxbRlugTglw+6AvrF4Ql4Su/zIZ9z9KtmzihYT6Gd/JpR8BiZ1lFbJeNS3v5gP9llG3UIWZ1Q==
-  dependencies:
-    kolorist "^1.7.0"
-    minimist "^1.2.8"
-    prompts "^2.4.2"
-
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
