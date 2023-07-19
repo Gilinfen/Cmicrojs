@@ -248,6 +248,7 @@ export default async function init<T extends string>(
       break
   }
   console.log()
+  return packageName
 }
 
 // 格式化命令行参数
