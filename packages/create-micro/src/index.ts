@@ -2,6 +2,18 @@ import cmicrojs from 'cmicrojs'
 
 cmicrojs([
   {
+    name: 'rollup',
+    display: 'Rollup',
+    color: 'red',
+    variants: [
+      {
+        name: 'rollup',
+        display: 'TypeScript',
+        color: 'blue'
+      }
+    ]
+  },
+  {
     name: 'react',
     display: 'React',
     color: 'cyan',
